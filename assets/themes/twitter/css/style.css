@@ -1,6 +1,9 @@
 /* Override some defaults */
+
 html, body {
   background-color: #eee;
+  font-family: 'Audiowide', cursive;
+  font-size: 10px;
 }
 .navbar {
   margin-bottom: 0;
