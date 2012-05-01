@@ -17,6 +17,11 @@ author :
   github : rennesdevops
   twitter : rennesdevops
   feedburner : feedname
+author :
+  name : Mathias Standaert
+  email: mathias@organicweb.fr
+  github: organicweb
+  twitter: organicweb
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

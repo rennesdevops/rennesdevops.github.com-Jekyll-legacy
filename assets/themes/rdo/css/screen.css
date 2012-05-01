@@ -58,7 +58,7 @@ a img {
   border: none;
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 19, ../sass/screen.sass */
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -378,16 +378,39 @@ body .removed {
   background: #990000;
   color: white;
 }
-/* line 22, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
 body #container {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 24, ../sass/screen.sass */
-body #container header {
+/* line 27, ../sass/screen.sass */
+body #container header h1 {
   font-family: "Audiowide", cursive;
+  font-size: 10px;
+}
+/* line 32, ../sass/screen.sass */
+body #container header h1 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+/* line 36, ../sass/screen.sass */
+body #container header h1 a span {
+  line-height: 17px;
+}
+/* line 38, ../sass/screen.sass */
+body #container header h1 a span#rennes {
+  display: block;
+  font-size: 2.4em;
+}
+/* line 41, ../sass/screen.sass */
+body #container header h1 a span#dev {
+  font-size: 2.4em;
+}
+/* line 43, ../sass/screen.sass */
+body #container header h1 a span#ops {
   font-size: 2.4em;
 }
 

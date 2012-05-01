@@ -7,6 +7,8 @@
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
 @import url(http://fonts.googleapis.com/css?family=Audiowide)
+
+@import "compass/css3/transform"
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -22,9 +24,24 @@ body
   #container
     +container
     header
-      font:
-        family: 'Audiowide', cursive
-        size: 2.4em
+      h1
+        font:
+          family: 'Audiowide', cursive
+          size: 10px
+        //+rotate(45)
+        a
+          text-decoration: none
+          text-transform: uppercase
+          line-height: 1em
+          span
+            line-height: 17px
+            &#rennes
+              display: block
+              font-size: 2.4em
+            &#dev
+              font-size: 2.4em
+            &#ops
+              font-size: 2.4em
     
 form
   +blueprint-form
