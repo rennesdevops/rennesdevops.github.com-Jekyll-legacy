@@ -16,6 +16,7 @@ author :
   email : rennesdevops@ledez.net
   github : rennesdevops
   twitter : rennesdevops
+  feedburner : rennesdevops
   feedburner : feedname
 author :
   name : Mathias Standaert
@@ -86,7 +87,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : rennesdevops
     livefyre :
       site_id : 123
     intensedebate :
