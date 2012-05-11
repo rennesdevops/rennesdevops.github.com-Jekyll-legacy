@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : RennesDevOps
-tagline: Site Tagline
+tagline: RennesDevOps
 author :
   name : Nicolas Ledez
   email : rennesdevops@ledez.net
