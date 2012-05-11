@@ -8,7 +8,7 @@
 @import blueprint/scaffolding
 @import url(http://fonts.googleapis.com/css?family=Audiowide)
 
-@import "compass/css3/transform"
+@import compass/css3/transform
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -25,14 +25,19 @@ body
     +container
     header
       h1
+        margin: 20px 0px 0px
         font:
           family: 'Audiowide', cursive
           size: 10px
+        +rotate(-45deg)
+        position: absolute
         //+rotate(45)
+        
         a
           text-decoration: none
           text-transform: uppercase
           line-height: 1em
+          
           span
             line-height: 17px
             &#rennes
