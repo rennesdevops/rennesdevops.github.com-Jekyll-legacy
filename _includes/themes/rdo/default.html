@@ -14,6 +14,13 @@
     <!-- Le styles -->
     <!-- <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="{{ ASSET_PATH }}/css/screen.css?body=1" rel="stylesheet" type="text/css" media="all">
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/pie.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="{{ ASSET_PATH }}/css/ie.css" type="text/css" media="screen" charset="utf-8">
+	<![endif]-->
+	
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -27,8 +34,13 @@
   <body>
     <div id="container">
       <header>
+		<nav role="navigation secondary" id="social-nav">
+			<a href="twitter" id="tweet">Twitter</a>
+			<a href="fb" id="fb">Facebook</a>
+			<a href="rss" id="rss">RSS</a>
+		</nav>
         <h1><a class="brand" href="{{ HOME_PATH }}"><span id="rennes">Rennes</span><span id="dev">Dev</span><span id="ops">Ops</span></a></h1>
-        <nav role="primary navigation">
+        <nav role="primary navigation" id="main-nav">
           <ul>
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
@@ -37,7 +49,22 @@
         </nav>
       </header>
       <div id="content">
-        {{ content }}
+		<div id="col-left">
+			<h3>Sponsors</h3>
+			<div class="sidebar-content">
+				<a href="#"><img src="http://lorempixel.com/125/125/fashion"></a>
+				<a href="#"><img src="http://lorempixel.com/125/125/transport"></a>
+				<a href="#"><img src="http://lorempixel.com/125/125/sports"></a>
+				<a href="#"><img src="http://lorempixel.com/125/125/city"></a>
+			</div>
+			<h3>Catégories</h3>
+			<div class="sidebar-content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div id="col-right">
+			{{ content }}
+		</div>
       </div>
       <footer>
         <p>&copy; {{ site.author.name }} 2012 

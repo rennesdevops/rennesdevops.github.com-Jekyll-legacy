@@ -7,7 +7,8 @@
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
 @import url(http://fonts.googleapis.com/css?family=Audiowide)
-
+@import compass/typography/lists/bullets
+@import compass/typography/links
 @import compass/css3/transform
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
@@ -21,33 +22,83 @@ body
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
+  +background(image-url('theme/body.png'))
   #container
-    +container
+    margin-left: 0px
     header
+      +background(image-url('theme/masthead.png') repeat-x)
+      overflow: hidden
+      nav
+        &#social-nav
+          margin-left: 20px
+          @each $member in fb, tweet, rss 
+            a##{$member}
+              +background(image-url('theme/#{$member}.png') no-repeat)
+              text-indent: -9999px
+              display: inline-block
+              width: 24px
+              height: 24px
+              margin: 12px 5px 11px 0px
       h1
-        margin: 20px 0px 0px
+        +column(40)
+        +background(image-url('theme/top.png') no-repeat)
+        color: $gris
+        height: 70px
+        margin: 0px
+        padding-top: 30px
         font:
           family: 'Audiowide', cursive
           size: 10px
-        +rotate(-45deg)
-        position: absolute
-        //+rotate(45)
-        
         a
+          margin: 0px 0px 0px 60px
+          width: 150px
+          display: block
           text-decoration: none
           text-transform: uppercase
-          line-height: 1em
-          
+          line-height: 1.1em
+          color: inherit
+          &:hover
+            color: white
           span
-            line-height: 17px
+            line-height: 19px
             &#rennes
               display: block
+              width: 150px
               font-size: 2.4em
             &#dev
               font-size: 2.4em
             &#ops
               font-size: 2.4em
-    
+      nav#main-nav
+        +column(56, true)
+        margin-left: -100px
+        height: 100px
+        ul
+          +no-bullets
+          li
+            float: left
+            a
+              +hover-link
+              color: white
+              padding: 40px 10px
+              font-size: 1.6em
+              display: block
+              text-transform: uppercase
+              
+    #content
+      overflow: hidden
+      +background(image-url('theme/casing.png') repeat-y)
+      #col-left
+        +column(27)
+        margin: 0 0 10px 15px
+        h3
+          color: $charbon
+          font-size: 2.6em
+          padding: 10px 0
+        div.sidebar-content
+          
+      #col-right
+        +column(56, true)
 form
   +blueprint-form
   // You'll probably want to remove the scaffolding once you start styling your site.
