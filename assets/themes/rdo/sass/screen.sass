@@ -10,6 +10,8 @@
 @import compass/typography/lists/bullets
 @import compass/typography/links
 @import compass/css3/transform
+@import compass/css3/border-radius
+@import compass/css3/box-shadow
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -39,6 +41,7 @@ body
               width: 24px
               height: 24px
               margin: 12px 5px 11px 0px
+            
       h1
         +column(40)
         +background(image-url('theme/top.png') no-repeat)
@@ -71,7 +74,7 @@ body
               font-size: 2.4em
       nav#main-nav
         +column(56, true)
-        margin-left: -100px
+        margin-left: -110px
         height: 100px
         ul
           +no-bullets
@@ -84,21 +87,98 @@ body
               font-size: 1.6em
               display: block
               text-transform: uppercase
+              &:hover
+                +background(image-url('theme/menua.png'))
               
     #content
       overflow: hidden
       +background(image-url('theme/casing.png') repeat-y)
       #col-left
-        +column(27)
+        +column(28.5)
         margin: 0 0 10px 15px
         h3
           color: $charbon
           font-size: 2.6em
           padding: 10px 0
         div.sidebar-content
-          
+          margin-right: 20px
+          font-size: 1.2em
       #col-right
         +column(56, true)
+        overflow: hidden
+        .page-header
+          color: $charbon
+          font-size: 1em
+          padding: 10px 0px
+          margin-left: 120px
+        ul.posts
+          +no-bullets
+          margin: 0px
+          padding: 0px
+          li
+            overflow: hidden
+            margin: 0px 0px 30px
+            .leftbox
+              +column(10, true)
+              +background(image-url('theme/line.png') no-repeat top center)
+              color: white
+              text-align: center
+              position: relative
+              span.arrow
+                +background(image-url('theme/arrow.png') no-repeat)
+                height: 20px
+                position: absolute
+                right: 0px
+                top: 30px
+                width: 10px
+              span.datebox
+                display: block
+                text-align: center
+                font-size: 2.5em
+                padding: 10px 0
+                +background(image-url('theme/line.png') no-repeat top center)
+              div.avatarbox
+                +background(image-url('theme/line.png') no-repeat top center)
+                padding: 15px 0 5px
+                img
+                  border: solid 5px #111
+              div.commentbox
+                +background(image-url('theme/line.png') no-repeat top center)
+                padding: 10px 0px
+                color: #eee
+                font-size: 1.2em
+                span.nbr-comments
+                  font-size: 36px
+                  color: white
+                
+            .rightbox
+              +column(43.5, true)
+              margin: 0px 5px 20px 20px
+              +border-radius(5px)
+              background-color: white
+              +single-box-shadow(#aaa, 0px, 0px, 3px, false, false)
+              a
+                text-decoration: none
+                color: $charbon
+                h1
+                  padding: 15px 20px 5px
+                p
+                  padding: 15px 20px 5px
+                  font-size: 1.2em
+              div.tagsbox
+                color: #827A60
+                border-top: 1px solid #DDDDDD
+                font-size: 10px
+                padding: 5px 0 5px 20px
+                text-transform: uppercase
+                a
+                  color: $rouge
+        footer
+          margin-left: 120px
+                  
+                
+                
+              
 form
   +blueprint-form
   // You'll probably want to remove the scaffolding once you start styling your site.
