@@ -561,6 +561,10 @@ body #container #content #col-right .page-header {
   margin-left: 120px;
 }
 /* line 114, ../sass/screen.sass */
+body #container #content #col-right h2 {
+  margin-left: 120px;
+}
+/* line 116, ../sass/screen.sass */
 body #container #content #col-right ul.posts {
   list-style: none;
   margin: 0px;
@@ -572,12 +576,12 @@ body #container #content #col-right ul.posts li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 118, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 body #container #content #col-right ul.posts li {
   overflow: hidden;
   margin: 0px 0px 30px;
 }
-/* line 121, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .leftbox {
   display: inline;
   float: left;
@@ -592,7 +596,7 @@ body #container #content #col-right ul.posts li .leftbox {
 * html body #container #content #col-right ul.posts li .leftbox {
   overflow-x: hidden;
 }
-/* line 127, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .leftbox span.arrow {
   background: url('/images/theme/arrow.png?1314977656') no-repeat;
   height: 20px;
@@ -601,36 +605,45 @@ body #container #content #col-right ul.posts li .leftbox span.arrow {
   top: 30px;
   width: 10px;
 }
-/* line 134, ../sass/screen.sass */
-body #container #content #col-right ul.posts li .leftbox span.datebox {
+/* line 136, ../sass/screen.sass */
+body #container #content #col-right ul.posts li .leftbox div.datebox {
   display: block;
   text-align: center;
-  font-size: 2.5em;
   padding: 10px 0;
   background: url('/images/theme/line.png?1314968280') no-repeat top center;
 }
-/* line 140, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
+body #container #content #col-right ul.posts li .leftbox div.datebox span.day {
+  font-size: 32px;
+  color: white;
+}
+/* line 144, ../sass/screen.sass */
+body #container #content #col-right ul.posts li .leftbox div.datebox span.month {
+  font-size: 12px;
+  color: #eeeeee;
+}
+/* line 147, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .leftbox div.avatarbox {
   background: url('/images/theme/line.png?1314968280') no-repeat top center;
   padding: 15px 0 5px;
 }
-/* line 143, ../sass/screen.sass */
+/* line 150, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .leftbox div.avatarbox img {
   border: solid 5px #111111;
 }
-/* line 145, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .leftbox div.commentbox {
   background: url('/images/theme/line.png?1314968280') no-repeat top center;
   padding: 10px 0px;
   color: #eeeeee;
   font-size: 1.2em;
 }
-/* line 150, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .leftbox div.commentbox span.nbr-comments {
   font-size: 36px;
   color: white;
 }
-/* line 154, ../sass/screen.sass */
+/* line 161, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .rightbox {
   display: inline;
   float: left;
@@ -651,21 +664,21 @@ body #container #content #col-right ul.posts li .rightbox {
 * html body #container #content #col-right ul.posts li .rightbox {
   overflow-x: hidden;
 }
-/* line 160, ../sass/screen.sass */
+/* line 167, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .rightbox a {
   text-decoration: none;
   color: #222222;
 }
-/* line 163, ../sass/screen.sass */
+/* line 170, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .rightbox a h1 {
   padding: 15px 20px 5px;
 }
-/* line 165, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .rightbox a p {
   padding: 15px 20px 5px;
   font-size: 1.2em;
 }
-/* line 168, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .rightbox div.tagsbox {
   color: #827a60;
   border-top: 1px solid #dddddd;
@@ -673,11 +686,11 @@ body #container #content #col-right ul.posts li .rightbox div.tagsbox {
   padding: 5px 0 5px 20px;
   text-transform: uppercase;
 }
-/* line 174, ../sass/screen.sass */
+/* line 181, ../sass/screen.sass */
 body #container #content #col-right ul.posts li .rightbox div.tagsbox a {
   color: #cf0808;
 }
-/* line 176, ../sass/screen.sass */
+/* line 183, ../sass/screen.sass */
 body #container #content #col-right footer {
   margin-left: 120px;
 }

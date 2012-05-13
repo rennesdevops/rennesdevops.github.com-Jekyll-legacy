@@ -27,10 +27,10 @@ Usage:
 	    <li>
 			<div class="leftbox">
 				<span class="arrow">&nbsp;</span>
-				<span class="datebox">
-				  {{this_month}}<br>
-				  {{this_year}}
-				</span>
+				<div class="datebox">
+				  <span class="day">{{this_month}}</span><br>
+				  <span class="month">{{this_year}}</span>
+				</div>
 				<div class="avatarbox">
 					<img src="http://lorempixel.com/56/56/people"><br>
 					{{ post.author }}

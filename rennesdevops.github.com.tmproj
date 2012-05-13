@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>_includes/themes/rdo/default.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -20,74 +18,10 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>310</integer>
 	<key>metaData</key>
-	<dict>
-		<key>_includes/JB/pages_list</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_includes/themes/rdo/default.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>37</integer>
-				<key>line</key>
-				<integer>36</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>16</integer>
-		</dict>
-		<key>assets/themes/rdo/sass/partials/_base.sass</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>11</integer>
-				<key>line</key>
-				<integer>14</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>assets/themes/rdo/sass/screen.sass</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>21</integer>
-				<key>line</key>
-				<integer>42</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>7</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>assets/themes/rdo/sass/screen.sass</string>
-		<string>assets/themes/rdo/sass/partials/_base.sass</string>
-		<string>_includes/themes/rdo/default.html</string>
-		<string>_includes/JB/pages_list</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{862, 212}, {831, 846}}</string>
+	<string>{{743, 157}, {831, 846}}</string>
 </dict>
 </plist>

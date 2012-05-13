@@ -6,10 +6,15 @@ title: RennesDevOps
 
 <ul class="posts">
   {% for post in site.posts %}
+  {% capture this_day %}{{ post.date | date: "%e" }}{% endcapture %}
+  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     <li>
 		<div class="leftbox">
 			<span class="arrow">&nbsp;</span>
-			<span class="datebox">{{ post.date | date_to_string }}</span>
+			<div class="datebox">
+			  <span class="day">{{ this_day}}</span><br>
+			  <span class="month">{{ this_month }}</span>
+			</div>
 			<div class="avatarbox">
 				<img src="http://lorempixel.com/56/56/people"><br>
 				{{ post.author }}

@@ -1,0 +1,64 @@
+{% comment %}<!--
+The pages_list include is a listing helper.
+Usage:
+  1) assign the 'pages_list' variable to a valid array of pages or posts.
+  2) include rdo/pages_list
+  example:
+    <ul>
+  	  {% assign pages_list = site.pages %}  
+  	  {% include rdo/pages_list %}
+  	</ul>
+  	
+  Grouping: (optional): 
+  	assign the 'group' variable to constrain the list to only pages/posts
+  	in the given group. Note you must define the group manually in the page/post
+  	meta-data to use this feature.
+  	Grouping is mainly helpful for non-post pages.
+  	If you want to group posts, it's easier/better to tag them, then pass the tagged posts array.
+  	i.e. site.tags.cool_tag (this returns an array of posts tagged: cool_tag)
+  	
+  This helper can be seen in use at: ../_layouts/default.html
+-->{% endcomment %}
+
+{% if site.JB.pages_list.provider == "custom" %}
+  {% include custom/pages_list %}
+{% else %}
+  <ul class="posts">
+    {% for post in pages_list %}
+    {% capture this_day %}{{ post.date | date: "%e" }}{% endcapture %}
+	  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    <li>
+  		<div class="leftbox">
+  			<span class="arrow">&nbsp;</span>
+  			<div class="datebox">
+  			  <span class="day">{{ this_day }}</span><br>
+  			  <span class="month">{{ this_month }}</span>
+  			</div>
+  			<div class="avatarbox">
+  				<img src="http://lorempixel.com/56/56/people"><br>
+  				{{ post.author }}
+  			</div>
+  			<div class="commentbox">
+  				<span class="nbr-comments">0</span>
+  				<br>
+  				Comments
+  			</div>
+  		</div>
+  		<div class="rightbox">
+  			<a href="{{ BASE_PATH }}{{ post.url }}">
+  				<h1>{{ post.title }}</h1>
+  				<p>{{ post.excerpt }}</p>
+  			</a>
+  			<div class="tagsbox">
+  				TAGS : 
+  				{% for tag in post.tags %}
+  				<a href="/tags.html#{{ tag }}">{{ tag }}</a>&nbsp;
+  				{% endfor %}
+  			</div>
+  		</div>
+  	</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
