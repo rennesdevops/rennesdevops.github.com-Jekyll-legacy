@@ -12,6 +12,7 @@
 @import compass/css3/transform
 @import compass/css3/border-radius
 @import compass/css3/box-shadow
+@import compass/css3/font-face
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -19,6 +20,7 @@
 // If you are doing a lot of stylesheet concatenation, it is suggested
 // that you scope your blueprint styles, so that you can better control
 // what pages use blueprint when stylesheets are concatenated together.
++font-face('bebas', font-files("/assets/fonts/bebas-neue-fontfacekit/BebasNeue-webfont.eot", "/assets/fonts/bebas-neue-fontfacekit/BebasNeue-webfont.woff", "/assets/fonts/bebas-neue-fontfacekit/BebasNeue-webfont.ttf","/assets/fonts/bebas-neue-fontfacekit/BebasNeue-webfont.svg#BebasNeueRegular"))
 body
   +blueprint-typography(true)
   +blueprint-utilities
@@ -74,7 +76,7 @@ body
               font-size: 2.4em
       nav#main-nav
         +column(56, true)
-        margin-left: -110px
+        margin-left: -100px
         height: 100px
         ul
           +no-bullets
@@ -84,7 +86,9 @@ body
               +hover-link
               color: white
               padding: 40px 10px
-              font-size: 1.6em
+              font:
+                size: 1.6em
+                family: 'bebas'
               display: block
               text-transform: uppercase
               &:hover
@@ -98,17 +102,25 @@ body
         margin: 0 0 10px 15px
         h3
           color: $charbon
-          font-size: 2.6em
+          font:
+            size: 2.6em
+            family: 'bebas'
           padding: 10px 0
+          margin-bottom: 0px
         div.sidebar-content
-          margin-right: 20px
+          margin-right: 0px 20px 0px 10px
           font-size: 1.2em
+          &#sponsor-box
+            img
+              margin: 5px 5px 0 0
       #col-right
         +column(56, true)
         overflow: hidden
         .page-header
           color: $charbon
-          font-size: 1em
+          font:
+            size: 1em
+            family: 'bebas'
           padding: 10px 0px
           margin-left: 120px
         h2
@@ -169,6 +181,7 @@ body
                 color: $charbon
                 h1
                   padding: 15px 20px 5px
+                  font-family: bebas
                 p
                   padding: 15px 20px 5px
                   font-size: 1.2em
@@ -180,6 +193,82 @@ body
                 text-transform: uppercase
                 a
                   color: $rouge
+        .post
+          overflow: hidden
+          margin: 20px 0px 30px
+          .leftbox
+            +column(10, true)
+            +background(image-url('theme/line.png') no-repeat top center)
+            color: white
+            text-align: center
+            position: relative
+            span.arrow
+              +background(image-url('theme/arrow.png') no-repeat)
+              height: 20px
+              position: absolute
+              right: 0px
+              top: 30px
+              width: 10px
+            div.datebox
+              display: block
+              text-align: center
+              padding: 10px 0
+              +background(image-url('theme/line.png') no-repeat top center)
+              span.day
+                font-size: 32px
+                color: white
+              span.month
+                font-size: 12px
+                color: #eee
+            div.avatarbox
+              +background(image-url('theme/line.png') no-repeat top center)
+              padding: 15px 0 5px
+              img
+                border: solid 5px #111
+            div.commentbox
+              +background(image-url('theme/line.png') no-repeat top center)
+              padding: 10px 0px
+              color: #eee
+              font-size: 1.2em
+              span.nbr-comments
+                font-size: 36px
+                color: white
+              
+          .rightbox
+            +column(43.5, true)
+            margin: 0px 5px 20px 20px
+            +border-radius(5px)
+            background-color: white
+            +single-box-shadow(#aaa, 0px, 0px, 3px, false, false)
+            a
+              text-decoration: none
+              color: $charbon
+              &:hover
+                color: $rouge
+            h1
+              padding: 15px 20px 5px
+              font-family: bebas
+            h2
+              margin: 5px 20px 5px
+            p
+              padding: 15px 20px 5px
+              font-size: 1.2em
+            div.tagsbox
+              color: #827A60
+              border-top: 1px solid #DDDDDD
+              font-size: 10px
+              padding: 5px 0 5px 20px 
+              text-transform: uppercase
+              a
+                color: $rouge
+            div.pagination
+              ul
+                +no-bullets
+                li
+                  display: inline-block
+                  font-size: 1.2em
+            div#disqus_thread
+              margin: 10px 20px 5px !important
         footer
           margin-left: 120px
                   
