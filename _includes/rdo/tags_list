@@ -6,7 +6,7 @@ Usage:
   example:
     <ul>
   	  {% assign tags_list = site.tags %}  
-  	  {% include JB/tags_list %}
+  	  {% include rdo/tags_list %}
   	</ul>
   
   Notes: 

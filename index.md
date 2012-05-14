@@ -25,7 +25,7 @@ title: RennesDevOps
 				Comments
 			</div>
 		</div>
-		<div class="rightbox">
+		<div class="rightbox bordered">
 			<a href="{{ BASE_PATH }}{{ post.url }}">
 				<h1>{{ post.title }}</h1>
 				<p>{{ post.excerpt }}</p>
