@@ -3,6 +3,7 @@ layout: post
 title: Introduction
 category : intro
 tags : [intro, home]
+excerpt : Présentation du groupe RennesDevOps Pour(quoi|qui)|ou ?
 ---
 {% include JB/setup %}
 

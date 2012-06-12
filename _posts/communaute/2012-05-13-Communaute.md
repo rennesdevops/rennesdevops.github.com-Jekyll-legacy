@@ -3,6 +3,7 @@ layout: post
 title: Communaute
 category : communaute
 tags : [communaute, home]
+excerpt : Tout pour suivre l'activitée de RennesDevOps
 ---
 {% include JB/setup %}
 
